@@ -10,10 +10,28 @@
     tools:context="com.nxys.monet.volleydemo.myapplication.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:text="Hello World!" />
+        android:text="带边框的文本"
+        android:id="@+id/t1"
+        android:textSize="24pt"
+        android:background="@drawable/bg_border"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:layout_below="@id/t1"
+        android:text="圆角边框文本"
+        android:textSize="24pt"
+        android:background="@drawable/bg_border3"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right|center_vertical"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+
 
     <Button
         android:layout_width="wrap_content"
@@ -25,4 +43,44 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移动的小球"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="moveBall"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算器"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="calculator"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bg"
+        android:background="@drawable/red"
+        android:onClick="login"
+        android:layout_below="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+</LinearLayout>
 </RelativeLayout>
