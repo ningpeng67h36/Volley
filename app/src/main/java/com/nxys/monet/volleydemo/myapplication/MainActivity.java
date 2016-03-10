@@ -57,9 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void moveBall(View view) {
-//        String strTmp="点击Button03";
-//        Toast.makeText(MainActivity.this,"666",
-//                Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this, BallActivity.class);
         startActivity(intent);
     }
@@ -72,6 +69,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View view) {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void CheckOrNotCheck(View view) {
+        Intent intent = new Intent(MainActivity.this, CheckOrNotCheckActivity.class);
+        intent.putExtra("welcome","欢迎");
+        startActivity(intent);
+    }
+
+    public void simpleAdapter(View view) {
+        Intent intent = new Intent(MainActivity.this, SimpleAdapterActivity.class);
         startActivity(intent);
     }
 }

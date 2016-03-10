@@ -27,7 +27,9 @@
         <activity android:name=".CalculatorActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity android:name=".CheckOrNotCheckActivity" />
+        <activity android:name=".SimpleAdapterActivity"></activity>
     </application>
 
 </manifest>
